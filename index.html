@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes identifier {
+            50%{
+                transform: scale(2.2) ;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .box{
+            height: 170px;
+            width: 200px;
+            border: 2px red;
+            border-radius: 10px;
+            box-shadow: 0 0 70px rgba(255, 100, 0, 0.7);
+            animation: identifier 1.3s infinite ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
